@@ -1,0 +1,144 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+.gradient1{
+	background: linear-gradient(to bottom, white, grey, white) 	;
+}
+.body {
+    /*background: linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red, violet);*/
+	color : black;
+	text-shadow; 10px #bfbfbf;
+ 	padding : 20px;
+    margin : 20px;
+	border: 5px #ffaaff;
+}
+
+.headbox{
+	text-align:center;
+	width:100%;
+	border:1px solid #bfbfbf;
+	border-radius:6px;
+	align-items:center;
+	box-shadow: 5px 5px 0px;
+}
+/*title*/
+.u{ 
+	font-family: 'Muli', sans-serif;
+	font-family: 'Comic Neue', cursive;
+}
+
+.t, .sign{
+	
+	color:#DB4437 /* #ff4e21*/ ;
+	font-family: 'Dancing Script', cursive;
+	transition:0.6s;
+}
+text2.sign{
+color:#4285F4;
+}
+.t:hover{color:#F4B400}
+text.sign:hover{color:#F4B400}
+text2.sign:hover{color:#0f9d58}
+.t, .u{
+	font-size:100px;
+	align:center;
+}
+text.t{
+	text-transform:lowercase;
+font-size:20px;
+margin:10px;
+}
+text.sign{
+text-transform:lowercase;
+}
+.sign{
+font-size:20px;
+margin:10px;
+}
+.misc1{
+text-align:right;
+}
+/*headings*/
+.a{
+font-family: 'Sen', sans-serif;
+font-size:20px;
+margin:10px;
+}
+/*body text*/
+.b{
+	font-family: 'Gotu', sans-serif;
+	font-size:10px;
+	font-color: Black;
+}
+.margin20{
+	margin:20px;
+}
+.button2, .button1{
+	background-color:#DB4437;
+	/*#4285F4google blue*/
+	/*#0F9D58 google green*/
+	/*#F4B400 google yellow*/
+	/*#DB4437 google red*/
+	
+	color:white;
+	width:25x; 
+	height:35px; 
+	margin:2px;
+	padding:10px;
+	border:1px solid black;
+	border-radius:6px;
+	opacity:1;
+	transition:0.4s;
+}
+.button1{
+}
+.button2{
+}
+.button1:hover {background-color:#F4B400}
+.button2:hover {background-color:#F4B400}
+.box1{
+	margin:40px;  
+	border:1px solid #bfbfbf;
+	padding: 10px;
+	width:750x; 
+	height:450px; 
+	border-radius:10px;
+	text-align:center;
+	align-items:center;
+	display:flex;
+	flex-direction:column;
+	box-shadow: 5px 5px 0px;
+	border-radius:6px;
+	background:white;
+}
+label{
+	text-transform:uppercase;
+	margin:20px 0px;
+	font-weight:lighter;
+}
+#value-box{
+	margin:20px 0px;
+	width:100px;
+	height:15px:
+	border-width:2px;
+	border-style:solid;
+	padding:10px;
+	border-radius:6px;
+}
+input[type="color"]{
+	margin:20px 0px;
+	width:100px;
+	height:100px;
+	border:2px solid #000;
+	padding:2px;
+	border-radius:6px;
+	}
+.input{
+}
+.box2{
+	width:200px;
+	border: 0.5px solid black;
+}
+	
+	
