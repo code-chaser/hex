@@ -23,13 +23,13 @@
 	box-shadow: 5px 5px 0px;
 }
 /*title*/
-.u{ 
+.u{
 	font-family: 'Muli', sans-serif;
 	font-family: 'Comic Neue', cursive;
 }
 
 .t, .sign{
-	
+
 	color:#DB4437 /* #ff4e21*/ ;
 	font-family: 'Dancing Script', cursive;
 	transition:0.6s;
@@ -51,12 +51,14 @@ margin:10px;
 }
 text.sign{
 text-transform:lowercase;
+text-decoration:none;
 }
 .sign{
 font-size:20px;
 margin:10px;
 }
-.misc1{
+div.misc1{
+position: relative;
 text-align:right;
 }
 /*headings*/
@@ -80,10 +82,10 @@ margin:10px;
 	/*#0F9D58 google green*/
 	/*#F4B400 google yellow*/
 	/*#DB4437 google red*/
-	
+
 	color:white;
-	width:25x; 
-	height:35px; 
+	width:25x;
+	height:35px;
 	margin:2px;
 	padding:10px;
 	border:1px solid black;
@@ -98,11 +100,11 @@ margin:10px;
 .button1:hover {background-color:#F4B400}
 .button2:hover {background-color:#F4B400}
 .box1{
-	margin:40px;  
+	margin:30px;
 	border:1px solid #bfbfbf;
 	padding: 10px;
-	width:750x; 
-	height:450px; 
+	width:100% auto;
+	height:550px;
 	border-radius:10px;
 	text-align:center;
 	align-items:center;
@@ -128,8 +130,8 @@ label{
 }
 input[type="color"]{
 	margin:20px 0px;
-	width:100px;
-	height:100px;
+	width:200px;
+	height:200px;
 	border:2px solid #000;
 	padding:2px;
 	border-radius:6px;
@@ -140,5 +142,94 @@ input[type="color"]{
 	width:200px;
 	border: 0.5px solid black;
 }
-	
-	
+.social{
+	width:750px;
+}
+
+
+/*hyperlink settings*/
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}.
+
+a:hover, a:active {cursor:pointer;@}
+
+/*Social Buttons*/
+
+div.social-buttons{
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+  align-items: center;
+	height: 60px;
+}
+
+.social-buttons a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a.social1::before{
+	background: linear-gradient(45deg, #00acee, #00acee);
+}
+
+.social-buttons a.social2::before{
+	background: linear-gradient(45deg,#ffdc80, #fcaf45, #f77737, #f56040, #fd1d1d, #e1306c, #c13584, #833ab4, #5851db, #405de6);
+}
+
+.social-buttons a.social3::before{
+	background: linear-gradient(45deg, #c4302b, #c4302b);
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+.social-buttons a ii{
+  transition: 0.3s ease-in;
+}
+.social-buttons a iii{
+  transition: 0.3s ease-in;
+}
+.social-buttons a:hover i{
+  background: linear-gradient(45deg, #00acee, #00acee);/*linear-gradient(45deg,#22a6b3,#30336b);*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+.social-buttons a:hover ii{
+  background: linear-gradient(45deg,#ffdc80, #fcaf45, #f77737, #f56040, #fd1d1d, #e1306c, #c13584, #833ab4, #5851db, #405de6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+.social-buttons a:hover iii{
+  background: linear-gradient(45deg, #c4302b, #c4302b);/*linear-gradient(45deg,#22a6b3,#30336b);*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
