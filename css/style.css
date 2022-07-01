@@ -10,8 +10,7 @@
 .body {
     /*background: linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red, violet);*/
     color: black;
-    text-shadow;
-    10px #bfbfbf;
+    text-shadow: 10px #bfbfbf;
     padding: 20px;
     margin: 20px;
     border: 5px #ffaaff;

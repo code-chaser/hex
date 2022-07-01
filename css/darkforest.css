@@ -16,8 +16,7 @@
     /*background: linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red, violet);*/
     background: #000000;
     color: black;
-    text-shadow;
-    10px #000000;
+    text-shadow: 10px #000000;
     padding: 20px;
     margin: 20px;
     border: 0px #ffaaff;
