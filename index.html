@@ -3,7 +3,7 @@
 <head>
     <title>Hex© Color Code</title>
     <link rel="icon" href="./logo.jpg" type="image/jpg">
-    <script src="./js/script.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
     <link rel="stylesheet" href="./css/darkaqua.css">
     <!-- Add social icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
@@ -35,7 +35,10 @@
         <input type="color" id="color-box" class="input"></input>
         <button onclick="check1()" class="b button1" id="but1">Color to Hex Code</button>
         <button onclick="check2()" class="b button2" id="but2">Hex Code to Color</button>
-        <input value="Enter #Hex Code" class="input margin20 b textbox" id="value-box"></input>
+        <div class="hex-info">
+            <input placeholder="Enter #Hex Code" class="input margin20 b textbox" id="value-box"></input>
+            <button class="b button3" title="Copy to clipboard"><img src="copy-icon.png" alt="" id="copyButton"><span class="copyText" id="copyTooltip"></span></button>
+        </div>
         <label class="label margin20">
             <label class="a">Enter<text class="t"><b>#hex</b></text>Code</label>
         </label>
@@ -60,6 +63,7 @@
                 @github</text><br /></a>
         <text2 class="u" style="font-size:12px; margin:5px;">-owned by Yashvardhan Baid</text2>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
