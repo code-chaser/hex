@@ -22,7 +22,7 @@
     border: 0px #a84ca8;
 }
 
-@-webkit-keyframes startb {
+@keyframes startb {
     from {
         width: 20px;
     }
@@ -86,7 +86,7 @@ text.sign:hover {
 .t,
 .u {
     font-size: 100px;
-    align: center;
+    text-align: center;
 }
 text.t {
     text-transform: lowercase;
@@ -176,7 +176,8 @@ label {
 #value-box {
     margin: 20px 0px;
     width: 107px;
-    height: 15px: border-width: 2px;
+    height: 15px;
+    border-width: 2px;
     border-style: solid;
     padding: 10px;
     border-radius: 6px;
@@ -187,10 +188,10 @@ input[type="color"] {
     height: 200px;
     border: 2px solid #fff;
     padding: 2px;
-    value: #4411aa;
+    color: #4411aa;
     border-radius: 6px;
 }
-.input {}
+
 .box2 {
     width: 200px;
     border: 0.5px solid black;
@@ -206,7 +207,6 @@ a:active {
 a:hover,
 a:active {
     cursor: pointer;
-    @
 }
 
 /*Social Buttons*/
@@ -268,22 +268,21 @@ div.social-buttons {
     background: linear-gradient(45deg, #00acee, #00acee);
     /*linear-gradient(45deg,#22a6b3,#30336b);*/
     
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    --webkit-background-clip: text;
+    --webkit-text-fill-color: transparent;
     transform: scale(2.8);
 }
 .social-buttons a:hover ii {
     background: linear-gradient(45deg, #ffdc80, #fcaf45, #f77737, #f56040, #fd1d1d, #e1306c, #c13584, #833ab4, #5851db, #405de6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    --webkit-background-clip: text;
+    --webkit-text-fill-color: transparent;
     transform: scale(2.8);
 }
 .social-buttons a:hover iii {
     background: linear-gradient(45deg, #c4302b, #c4302b);
     /*linear-gradient(45deg,#22a6b3,#30336b);*/
     
-    -webkit-background-clip: text;
+    --webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(2.8);
 }
-{}
