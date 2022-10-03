@@ -22,7 +22,7 @@
     border: 0px #ffaaff;
 }
 
-@-webkit-keyframes startb {
+@keyframes startb {
     from {
         width: 20px;
     }
@@ -32,23 +32,24 @@
 }
 
 .bar {
-    height: 3px;
-    width: 900px;
+    height: 2.5px;
+    width: 100%;
     margin: 5px auto;
+    margin-top: 15px;
     border-image: linear-gradient(to right, #001717, #00f5f5 50%, #001717);
     border-image-slice: 1;
     border-top-style: solid;
     border-top-width: 10px;
     border-bottom: 5px solid;
-    //border-color:#00f5f5;
+    border-color:#00f5f5;
     transition: 0.8s ease-in;
-    -webkit-animation-name: startb;
-    -webkit-animation-duration: 2s;
+    --webkit-animation-name: startb;
+    --webkit-animation-duration: 2s;
     animation-iteration-count: 1;
     transition: 0.9s ease-in;
 }
 
-//.bar:hover{
+.bar:hover{
 width:900px;
 background: linear-gradient(to right, #001717, #00f5f5 50%, #001717);
 
@@ -90,7 +91,7 @@ text.sign:hover {
 .t,
 .u {
     font-size: 100px;
-    align: center;
+    text-align: center;
 }
 text.t {
     text-transform: lowercase;
@@ -124,7 +125,7 @@ div.misc1 {
 .b {
     font-family: 'Gotu', sans-serif;
     font-size: 10px;
-    font-color: Black;
+    color: Black;
 }
 .margin20 {
     margin: 20px;
@@ -147,6 +148,7 @@ div.misc1 {
     opacity: 1;
     transition: 0.4s;
 }
+
 .button3 {
     background-color: transparent;
     border: none;
@@ -160,6 +162,7 @@ div.misc1 {
 }
 .button1 {}
 .button2 {}
+
 .button1:hover {
     background-color: #a0ffff;
     transform: scale(1.1);
@@ -215,7 +218,7 @@ div.misc1 {
   }
 
 .box1 {
-    margin: 30px;
+    margin-top: 30px;
     border: 1px solid #00f5f5;
     padding: 10px;
     width: 100% auto;
@@ -243,7 +246,8 @@ label {
 #value-box {
     margin: 20px 0px;
     width: 100px;
-    height: 15px: border-width: 2px;
+    height: 15px;
+    border-width: 2px;
     border-style: solid;
     padding: 10px;
     border-radius: 6px;
@@ -254,10 +258,10 @@ input[type="color"] {
     height: 200px;
     border: 2px solid #fff;
     padding: 2px;
-    value: #a0ffff;
+    color: #a0ffff;
     border-radius: 6px;
 }
-.input {}
+
 .box2 {
     width: 200px;
     border: 0.5px solid black;
@@ -273,7 +277,6 @@ a:active {
 a:hover,
 a:active {
     cursor: pointer;
-    @
 }
 
 /*Social Buttons*/
@@ -335,13 +338,13 @@ div.social-buttons {
     background: linear-gradient(45deg, #00acee, #00acee);
     /*linear-gradient(45deg,#22a6b3,#30336b);*/
     
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    --webkit-background-clip: text;
+    --webkit-text-fill-color: transparent;
     transform: scale(2.8);
 }
 .social-buttons a:hover ii {
     background: linear-gradient(45deg, #ffdc80, #fcaf45, #f77737, #f56040, #fd1d1d, #e1306c, #c13584, #833ab4, #5851db, #405de6);
-    -webkit-background-clip: text;
+    --webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(2.8);
 }
@@ -349,8 +352,7 @@ div.social-buttons {
     background: linear-gradient(45deg, #c4302b, #c4302b);
     /*linear-gradient(45deg,#22a6b3,#30336b);*/
     
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    --webkit-background-clip: text;
+    --webkit-text-fill-color: transparent;
     transform: scale(2.8);
 }
-{}
