@@ -149,6 +149,20 @@ div.misc1 {
     transition: 0.4s;
 }
 
+.button3 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transform: scale(.7);
+    transition: 0.4s;
+}
+.button3 img {
+    height: 3em;
+    filter: invert(86%) sepia(42%) saturate(3730%) hue-rotate(122deg) brightness(97%) contrast(103%);
+}
+.button1 {}
+.button2 {}
+
 .button1:hover {
     background-color: #a0ffff;
     transform: scale(1.1);
@@ -159,6 +173,50 @@ div.misc1 {
     transform: scale(1.1);
     color: #001717;
 }
+.button3 img:hover,
+.button3 img:focus {
+    filter: invert(94%) sepia(84%) saturate(2523%) hue-rotate(163deg) brightness(106%) contrast(105%);
+    transform: scale(1.1);
+}
+/* copy code tooltip */
+#copyTooltip {
+    position: relative;
+    display: inline-block;
+    bottom: 100%;
+    left: 10%;
+    color: #00f5f5;
+    cursor: auto;
+}
+/* animation to remove tooltip */
+.slide-out-bck-center {
+	-webkit-animation: slide-out-bck-center 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+	        animation: slide-out-bck-center 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+}
+@-webkit-keyframes slide-out-bck-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(-1100px);
+              transform: translateZ(-1100px);
+      opacity: 0;
+    }
+  }
+  @keyframes slide-out-bck-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(-1100px);
+              transform: translateZ(-1100px);
+      opacity: 0;
+    }
+  }
+
 .box1 {
     margin-top: 30px;
     border: 1px solid #00f5f5;
@@ -173,6 +231,12 @@ div.misc1 {
     box-shadow: 5px 5px 0px;
     border-radius: 5px;
     background: #001717;
+}
+.hex-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
 }
 label {
     text-transform: uppercase;
